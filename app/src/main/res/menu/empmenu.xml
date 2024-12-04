@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navTasks"
+        android:icon="@drawable/vector_tasks"
+        android:title="Tasks"
+        />
+    <item
+        android:id="@+id/navLeave"
+        android:icon="@drawable/vector_leave"
+        android:title="Leave"
+        />
+
+    <item
+        android:id="@+id/navEmpHome"
+        android:icon="@drawable/vectorhome"
+        android:title="Home"
+        />
+
+
+    <item
+        android:id="@+id/navLeaderboard"
+        android:icon="@drawable/vector_leaderboard"
+        android:title="Leaderboard"
+        />
+
+    <item
+        android:id="@+id/navMessages"
+        android:icon="@drawable/vector_myprofile"
+        android:title="My Profile"
+        />
+
+</menu>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewServiceType"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginVertical="10dp"
+    android:textAlignment="center"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/servicetype_cards">
+
+        <TextView
+            android:id="@+id/txtServiceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="3dp"
+            android:text="Basic Service"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:text="Typical Parts"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:paddingHorizontal="15dp" />
+
+        <TextView
+            android:id="@+id/txtParts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontpoppinsmedium"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="25dp"
+            android:text="Brake Pads:               R 2000.00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:text="Typical Labour Cost"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:paddingHorizontal="15dp" />
+
+        <TextView
+            android:id="@+id/txtLabourCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontpoppinsmedium"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:text="R 1200.00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/fontpoppinsmedium"
+                android:paddingHorizontal="45dp"
+                android:paddingVertical="2dp"
+                android:text="Delete"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

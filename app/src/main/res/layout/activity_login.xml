@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logincar"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgseethroughgrey"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <TextView
+            android:id="@+id/login_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/agdasima_bold"
+            android:paddingBottom="60dp"
+            android:text="Login"
+            android:textColor="@android:color/black"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/albert_sans"
+            android:paddingBottom="8dp"
+            android:text="Email"
+            android:textColor="@android:color/black"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txtgradientgtor"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/albert_sans"
+            android:paddingTop="12dp"
+            android:paddingBottom="8dp"
+            android:text="Password"
+            android:textColor="@android:color/black"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txtgradientgtor"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:padding="12dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateTint="@color/black" />
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/agdasima_bold"
+            android:paddingTop="5dp"
+            android:text="No Account? Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="70dp"
+            android:text="Powered By Tech Fusion"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

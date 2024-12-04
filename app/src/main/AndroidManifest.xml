@@ -1,0 +1,121 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Antonie Motors"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.XBCADAntonieMotors"
+        tools:targetApi="31">
+        <activity
+            android:name=".WaitingSettings"
+            android:exported="false" />
+        <activity
+            android:name=".CameraCaptureActivity"
+            android:exported="false"
+         />
+        <activity
+            android:name=".SuccessOwnerActivity"
+            android:exported="false"
+             />
+        <activity
+            android:name=".DeniedActivity"
+            android:exported="false"
+          />
+        <activity
+            android:name=".WaitingActivity"
+            android:exported="false"
+             />
+        <activity
+            android:name=".EmpEnterInfo"
+            android:exported="false"
+             />
+        <activity
+            android:name=".EmpSelectBusinessAdminActivity"
+            android:exported="false"
+          />
+        <activity
+            android:name=".AdminSelectBusinessActivity"
+            android:exported="false"
+           />
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false"
+          />
+        <activity
+            android:name=".OwnerEnterInfoActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".RegisterBusinessActivity"
+            android:exported="false"
+           />
+        <activity
+            android:name=".AdminEnterInfo"
+            android:exported="false"
+           />
+        <activity
+            android:name=".SelectRoleReg"
+            android:exported="false"
+           />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.XBCADAntonieMotors.MySplash"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

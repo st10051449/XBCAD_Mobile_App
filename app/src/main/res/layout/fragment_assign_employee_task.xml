@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignEmployeeTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <FrameLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <ImageView
+                android:id="@+id/imgHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carenginetodo" />
+
+            <View
+                android:id="@+id/viewTint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000" />
+
+                <ImageView
+                    android:id="@+id/ivBackButton"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/vectorback" />
+
+                <TextView
+                    android:id="@+id/txtEmployee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aclonica"
+                    android:gravity="center"
+                    android:paddingTop="50dp"
+                    android:text="Assign Task"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45sp" />
+
+
+        </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Scrollable content -->
+        <ScrollView
+            android:id="@+id/svAssignTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llAssignTask">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:text="Task Name:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/txtTaskName"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:text="Task Description:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/txtEmpTaskDescription"
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/txtgradientgtor"
+                    android:paddingHorizontal="10dp"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:text="Select Service:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/spSelectVehicle"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/txtgradientgtor" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:text="Select Employee:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/spSelectEmp"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/txtgradientgtor"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:text="Select Due Date:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtSelectTaskDueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:text="Choose Date"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnAssignTask"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FF750A0B"
+                    android:layout_gravity="center"
+                    android:text="Assign"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                </Space>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+
+

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddVehicleMakeModelPOR">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <!-- Background Image with See-Through Black Layer -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vehicledetails"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true" />
+
+            <!-- TextView on top of the background image -->
+            <TextView
+                android:id="@+id/txtTitleVehicleNumberPLate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:text="Vehicles"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/aclonica"
+                android:textSize="47sp"
+                android:elevation="4dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linLayoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:text="Vehicle Makes"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="50dp">
+
+
+                        <TextView
+                            android:id="@+id/txtSelecctCustomer"
+                            android:layout_width="311dp"
+                            android:layout_height="wrap_content"
+                            android:text="Enter a NEW vehicle make to the Global Database:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <EditText
+                            android:id="@+id/edttextNewVehicleMake"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:hint ="eg.BMW"
+                            android:padding="12dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="100dp">
+
+
+                        <Button
+                            android:id="@+id/btnAddNewVehicleMake"
+                            android:layout_width="147dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#038A39"
+                            android:text="Add Vehicle Make"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.498"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:text="Vehicle Models"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Select a Vehicle Make to add a model:"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/edttxtSelectedVehicleMake"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:hint ="eg. Honda"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="New Vehicle Model:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtNewVehicleModel"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:hint ="eg. Accord"
+                            android:background="@drawable/spingradientgtor"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="150dp"
+                        android:paddingBottom="100dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnAddVehicleModel"
+                                android:layout_width="140dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#038A39"
+                                android:text="Add Model"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.498"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:text="Province of Registration (POR)"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/txtPORHelp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Select a Province:"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"/>
+
+                        <Spinner
+                            android:id="@+id/spnProvince"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:hint ="eg. Gauteng Province"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Add an Area:"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/edttxtArea"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:hint ="eg. Umhlanga Rocks"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:textAlignment="center"
+                            android:text="License Plate Provintial code"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtAddPOR"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:hint ="eg. NUR"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Is the POR Code at the beginning or end of the number plate?"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="100dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RadioButton
+                                    android:id="@+id/rbBeginning"
+                                    android:layout_width="113dp"
+                                    android:layout_height="48dp"
+                                    android:text="Beginning" />
+
+
+                                <RadioButton
+                                    android:id="@+id/rbEnd"
+                                    android:layout_width="101dp"
+                                    android:layout_height="48dp"
+                                    android:text="End" />
+
+                            </RadioGroup>
+
+
+                           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="100dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnAddPOR"
+                                android:layout_width="140dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#038A39"
+                                android:text="Add POR"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.498"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

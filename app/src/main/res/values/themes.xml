@@ -1,0 +1,19 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.XBCADAntonieMotors" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+
+<!--    <style name="Theme.XBCADAntonieMotors" parent="Base.Theme.XBCADAntonieMotors" />-->
+<!--</resources>-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.XBCADAntonieMotors" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.XBCADAntonieMotors" parent="Base.Theme.XBCADAntonieMotors" />
+</resources>

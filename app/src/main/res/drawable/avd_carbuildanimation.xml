@@ -1,0 +1,326 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="288dp"
+            android:height="288dp"
+            android:viewportWidth="288"
+            android:viewportHeight="288">
+            <group android:name="carpart1">
+                <path
+                    android:name="path_1"
+                    android:pathData="M 82.75 150.837 L 91.5 150.837 L 91.5 153.125 L 108.352 156.126 L 190.287 157.938 L 205.25 153.125 L 185.912 143.456 C 175.588 138.294 164.256 135.625 152.75 135.625 L 144 135.625 L 139.625 140 L 126.5 140 L 126.5 126.875 C 121.568 126.874 116.703 128.024 112.294 130.235 C 110.575 131.097 109.897 132.816 108.352 133.984 C 107.197 134.859 104.874 136.347 103.837 137.384 L 100.25 140 L 100.25 122.399 L 82.75 122.399 L 82.75 150.837 Z"
+                    android:fillColor="#f8312f"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart2">
+                <path
+                    android:name="path_2"
+                    android:pathData="M 91.5 144.375 L 187.75 144.375 L 196.5 148.75 L 91.5 148.75 L 91.5 144.375 Z"
+                    android:fillColor="#f4f4f4"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart3">
+                <path
+                    android:name="path_3"
+                    android:pathData="M 100.25 122.5 L 82.75 122.5 L 82.75 118.125 L 100.25 118.125 L 100.25 122.5 Z"
+                    android:fillColor="#e6e6e6"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart4">
+                <path
+                    android:name="path_4"
+                    android:pathData="M 100.25 153.125 L 205.25 153.125 L 205.25 161.875 L 100.25 161.875 L 100.25 153.125 Z"
+                    android:fillColor="#ca0b4a"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart5">
+                <path
+                    android:name="path_5"
+                    android:pathData="M 82.75 131.25 L 100.25 131.25 L 100.25 126.875 L 82.75 126.875 L 82.75 131.25 Z M 135.25 161.875 L 124.312 161.875 C 120.681 161.875 117.75 158.944 117.75 155.312 C 117.75 151.681 120.681 148.75 124.312 148.75 L 135.25 148.75 L 135.25 161.875 Z"
+                    android:fillColor="#038A39"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart6">
+                <path
+                    android:name="path_6"
+                    android:pathData="M 130.875 140 L 126.5 140 L 126.5 126.875 C 128.906 126.875 130.875 128.844 130.875 131.25 L 130.875 140 Z M 139.625 148.75 L 135.25 148.75 L 135.25 161.875 L 139.625 161.875 L 139.625 148.75 Z"
+                    android:fillColor="#636363"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart7">
+                <path
+                    android:name="path_7"
+                    android:pathData="M 112.325 130.217 L 122.125 140 L 100.25 140 L 104.1 136.15 C 106.503 133.741 109.281 131.738 112.325 130.217 Z"
+                    android:fillColor="#e6e6e6"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart8">
+                <path
+                    android:name="path_8"
+                    android:pathData="M 161.5 150.938 C 161.5 154.999 163.113 158.893 165.985 161.765 C 168.857 164.637 172.751 166.25 176.812 166.25 C 180.874 166.25 184.768 164.637 187.64 161.765 C 190.512 158.893 192.125 154.999 192.125 150.938 C 192.125 146.876 190.512 142.982 187.64 140.11 C 184.768 137.238 180.874 135.625 176.812 135.625 C 172.751 135.625 168.857 137.238 165.985 140.11 C 163.113 142.982 161.5 146.876 161.5 150.938 Z M 82.75 150.938 C 82.75 154.999 84.363 158.893 87.235 161.765 C 90.107 164.637 94.001 166.25 98.063 166.25 C 102.124 166.25 106.018 164.637 108.89 161.765 C 111.762 158.893 113.375 154.999 113.375 150.938 C 113.375 146.876 111.762 142.982 108.89 140.11 C 106.018 137.238 102.124 135.625 98.063 135.625 C 94.001 135.625 90.107 137.238 87.235 140.11 C 84.363 142.982 82.75 146.876 82.75 150.938 Z"
+                    android:fillColor="#321b41"
+                    android:strokeWidth="1"/>
+            </group>
+            <group android:name="carpart9">
+                <path
+                    android:name="path_9"
+                    android:pathData="M 170.25 150.938 C 170.25 152.678 170.941 154.347 172.172 155.578 C 173.403 156.809 175.072 157.5 176.812 157.5 C 178.553 157.5 180.222 156.809 181.453 155.578 C 182.684 154.347 183.375 152.678 183.375 150.938 C 183.375 149.197 182.684 147.528 181.453 146.297 C 180.222 145.066 178.553 144.375 176.812 144.375 C 175.072 144.375 173.403 145.066 172.172 146.297 C 170.941 147.528 170.25 149.197 170.25 150.938 Z M 91.5 150.938 C 91.5 152.678 92.191 154.347 93.422 155.578 C 94.653 156.809 96.322 157.5 98.063 157.5 C 99.803 157.5 101.472 156.809 102.703 155.578 C 103.934 154.347 104.625 152.678 104.625 150.938 C 104.625 149.197 103.934 147.528 102.703 146.297 C 101.472 145.066 99.803 144.375 98.063 144.375 C 96.322 144.375 94.653 145.066 93.422 146.297 C 92.191 147.528 91.5 149.197 91.5 150.938 Z"
+                    android:fillColor="#f4f4f4"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="carpart1">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="3000"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="3000"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="3000"
+                    android:valueFrom="100"
+                    android:valueTo="100"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart2">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="3100"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="3100"
+                    android:valueFrom="155"
+                    android:valueTo="155"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="3100"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart3">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="3100"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="3100"
+                    android:valueFrom="130"
+                    android:valueTo="130"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="3100"
+                    android:valueFrom="120"
+                    android:valueTo="120"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart4">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="translateX"
+                    android:duration="3000"
+                    android:valueFrom="15"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateY"
+                    android:duration="3000"
+                    android:valueFrom="20"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart5">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="scaleX"
+                    android:duration="3200"
+                    android:valueFrom="5"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="scaleY"
+                    android:duration="3200"
+                    android:valueFrom="5"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="3200"
+                    android:valueFrom="140"
+                    android:valueTo="140"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="3200"
+                    android:valueFrom="110"
+                    android:valueTo="110"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart6">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="scaleX"
+                    android:duration="2500"
+                    android:valueFrom="8"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="scaleY"
+                    android:duration="2500"
+                    android:valueFrom="8"
+                    android:valueTo="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="2500"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="2500"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart7">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="2400"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="2400"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="2400"
+                    android:valueFrom="144"
+                    android:valueTo="144"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart8">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="2000"
+                    android:valueFrom="0"
+                    android:valueTo="720"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="2000"
+                    android:valueFrom="140"
+                    android:valueTo="140"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="2000"
+                    android:valueFrom="140"
+                    android:valueTo="140"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="carpart9">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="2000"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="2000"
+                    android:valueFrom="140"
+                    android:valueTo="140"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="2000"
+                    android:valueFrom="140"
+                    android:valueTo="140"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

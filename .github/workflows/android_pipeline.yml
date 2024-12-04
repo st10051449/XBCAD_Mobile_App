@@ -1,0 +1,71 @@
+name: Android DevSecOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Analyze Android App
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout Repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set Up Java Environment
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      # Step 3: Cache Gradle Dependencies
+      - name: Cache Gradle files
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-
+
+      # Step 4: Set Up Android SDK
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
+        with:
+          api-level: 31
+          build-tools: 31.0.0
+          ndk: 21.1.6352462
+
+      # Step 5: Grant execute permissions to gradlew
+      - name: Grant execute permissions to gradlew
+        run: chmod +x ./gradlew
+
+      # Step 7: Lint Checks
+      - name: Run Android Lint
+        run: ./gradlew lint
+
+      # Step 8: Build Debug APK
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug
+
+      # Step 9: Upload Dependency Check Report
+      - name: Upload Dependency Check Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: dependency-check-report
+          path: build/reports/dependency-check
+
+      # Step 10: Artifact Upload (Optional - APK Output)
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk

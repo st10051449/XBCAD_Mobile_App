@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterVehicleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <!-- Background Image with See-Through Black Layer -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vehicledetails"
+            android:background="@drawable/rounded_image"
+            android:clipToOutline="true" />
+
+        <!-- TextView on top of the background image -->
+        <TextView
+            android:id="@+id/txtTitleVehicleNumberPLate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="60dp"
+            android:text="Register \nVehicle"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/aclonica"
+            android:textSize="47sp"
+            android:elevation="4dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/vectorback"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp" />
+
+    </FrameLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:text="Vehicle Information"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtSelecctCustomer"
+                            android:layout_width="311dp"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicle Owner:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/edtCustomerNames"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Vehicle No. Plate:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/edttxtVehicleNoPlate"
+                                android:layout_width="240dp"
+                                android:layout_height="50dp"
+                                android:padding="12dp"
+                                android:background="@drawable/spingradientgtor"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.286"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Area Code / Province of registration:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerPOR"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spingradientgtor"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.9"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0">
+                        </Spinner>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Vehicle Make:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/edttxtVehicleMake"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Vehicle Model:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtVehicleModel"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:padding="12dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Model Year:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <NumberPicker
+                                android:id="@+id/npYearPicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Vin Number:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtVinNumber"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Vehicle Kilometers:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtVehicleKms"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:padding="12dp"/>
+
+                    </LinearLayout>
+
+
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtAttachImageAuto"
+                                android:layout_width="419dp"
+                                android:layout_height="49dp"
+                                android:text="Attach Image"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.037"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.785" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/imgAttachImage"
+                                android:layout_width="49dp"
+                                android:layout_height="63dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.428"
+                                app:srcCompat="@drawable/paperclip" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/gimgRecyclerView"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/txtCamera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Capture Vehicle"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.506" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgVehicleFront"
+                                android:layout_width="55dp"
+                                android:layout_height="58dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.173"
+                                app:srcCompat="@drawable/camera" />
+
+                            <TextView
+                                android:id="@+id/txtVehicleFront"
+                                android:layout_width="419dp"
+                                android:layout_height="49dp"
+                                android:text="Vehicle Front View"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.881" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/rvVehicleFront"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgVehicleRightSide"
+                                android:layout_width="55dp"
+                                android:layout_height="58dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.173"
+                                app:srcCompat="@drawable/camera" />
+
+                            <TextView
+                                android:id="@+id/txtVehicleRight"
+                                android:layout_width="419dp"
+                                android:layout_height="49dp"
+                                android:text="Vehicle Right SIde"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.881" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/rvVehicleRightSide"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgVehicleRear"
+                                android:layout_width="55dp"
+                                android:layout_height="58dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.173"
+                                app:srcCompat="@drawable/camera" />
+
+                            <TextView
+                                android:id="@+id/txtVehicleBack"
+                                android:layout_width="419dp"
+                                android:layout_height="49dp"
+                                android:text="Vehicle Rear"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.881" />
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/rvVehicleLeftSide"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imgVehicleLeftSide"
+                                android:layout_width="55dp"
+                                android:layout_height="58dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.173"
+                                app:srcCompat="@drawable/camera" />
+
+                            <TextView
+                                android:id="@+id/txtVehicleLeft"
+                                android:layout_width="419dp"
+                                android:layout_height="49dp"
+                                android:text="Vehicle Left Side"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.881" />
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/rvVehicleRear"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="100dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnSubmitRegVehicle"
+                                android:layout_width="140dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#038A39"
+                                android:text="Register"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.498"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>

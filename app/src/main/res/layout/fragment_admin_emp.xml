@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carsideprofile"
+    tools:context=".AdminEmpFragment">
+
+    <!-- Black Overlay -->
+    <View
+        android:id="@+id/blackOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgblackdark" />
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Employee\nMenu"
+            android:textAlignment="center"
+            android:textColor="#D3CDCD"
+            android:textSize="58sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="150dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Row 1: Leave Manager and Search -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Leave Manager -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="#787771"
+                        app:cardCornerRadius="75dp"
+                        app:cardElevation="4dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:id="@+id/imgleavemang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/leavesymbol" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Leave Manager"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Search -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="#787771"
+                        app:cardCornerRadius="75dp"
+                        app:cardElevation="4dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:id="@+id/imgsearchandreg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/searchregsym" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Search"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 2: Task Manager and Employee Analytics -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Task Manager -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="#787771"
+                        app:cardCornerRadius="75dp"
+                        app:cardElevation="4dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:id="@+id/imgtask"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/taskssymbol" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Task Manager"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Employee Analytics -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="#787771"
+                        app:cardCornerRadius="75dp"
+                        app:cardElevation="4dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:id="@+id/imganalytics"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/empanasym" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Employee Analytics"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 3: Admin Approval -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Admin Approval -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="1dp"
+                        app:cardBackgroundColor="#787771"
+                        app:cardCornerRadius="75dp"
+                        app:cardElevation="4dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:id="@+id/imgadminapprove"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/adminapprovel" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Admin Approval"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </Space>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </FrameLayout>

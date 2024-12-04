@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navDocument"
+        android:icon="@drawable/vectorreceipt"
+        android:title="Documents"
+        />
+    <item
+        android:id="@+id/navCustomers"
+        android:icon="@drawable/vector_customer"
+        android:title="Customers"
+        />
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/vectorhome"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/navVehicles"
+        android:icon="@drawable/vectorcar"
+        android:title="Vehicles"
+        />
+    <item
+        android:id="@+id/navEmployees"
+        android:icon="@drawable/vectortoolstransparent"
+        android:title="Employees"
+        />
+</menu>

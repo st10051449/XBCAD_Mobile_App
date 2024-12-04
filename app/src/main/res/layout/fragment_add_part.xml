@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carexhaustheader"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true"/>
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start|top"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/aclonica"
+                android:layout_marginTop="120dp"
+                android:text="Inventory"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="38sp" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:text="Part Details"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtPartN"
+                            android:layout_width="311dp"
+                            android:layout_height="wrap_content"
+                            android:text="Part Name:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtPartName"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:layout_height="43dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:textColor="@color/black"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Part Description:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtPartDescription"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp"
+                            android:text="Additional Details"
+                            android:textAlignment="center"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Stock Count:"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <NumberPicker
+                                android:id="@+id/npStockCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Please select a minimum stock amount:"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <NumberPicker
+                                android:id="@+id/npMinStockCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Cost Price:"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtCostPrice"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:inputType="numberDecimal"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"/>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="100dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnAddPart"
+                                android:layout_width="140dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#038A39"
+                                android:text="Save"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.498"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

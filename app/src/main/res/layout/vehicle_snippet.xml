@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/customer_cards"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp">
+
+    <!-- Header with Red Background -->
+    <TextView
+        android:id="@+id/txtVehicleNumPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customernamecorners"
+        android:text="Vehicle Number Plate"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Main Content Area with Text and Image -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <!-- Text Views on the Left Side -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgVehicle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/lblVehicle"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Model:"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtVehicleModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="71O KHB GP"
+                android:padding="4dp"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lblVehicleOwner"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Owner:"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtVehicleOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name and Surname"
+                android:padding="4dp"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Image View on the Right Side -->
+        <ImageView
+            android:id="@+id/imgVehicle"
+            android:layout_width="156dp"
+            android:layout_height="146dp"
+            android:background="@drawable/rounded_vehicle_images"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

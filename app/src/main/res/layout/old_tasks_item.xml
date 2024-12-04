@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/numberPlateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Number Plate"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/taskDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Description"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/taskDateMade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Created"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/taskDateDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Completed"
+        android:textSize="14sp" />
+</LinearLayout>

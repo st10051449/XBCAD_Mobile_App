@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Background Image -->
+            <ImageView
+                android:id="@+id/ivHeaderImage"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/servicesheader" />
+
+            <!-- TextView on top of the ImageView -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:clickable="false"
+                android:fontFamily="@font/aclonica"
+                android:text="Service Details"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="42sp" />
+
+            <!-- Back Button on top of the background image -->
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start|top"
+                android:layout_margin="16dp"
+                android:src="@drawable/vectorback" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linLayoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="80dp"
+                    android:fontFamily="@font/fontpoppinssemibold"
+                    android:text="Service Name"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnCustName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name Surname"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="@font/fontpoppinssemibold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vectorstatusbusy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgChangeStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vectorchange"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.716"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontpoppinsregular"
+                            android:text="Date car received:"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/txtDateCarReceived"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="@drawable/txtgradientgtor"
+                            android:fontFamily="@font/fontpoppinsmedium"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="3dp"
+                            android:text="19 August 2024"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView4"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:focusable="false"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontpoppinsregular"
+                            android:text="Date car returned:"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/txtDateCarReturned"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="@drawable/txtgradientgtor"
+                            android:fontFamily="@font/fontpoppinsmedium"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="3dp"
+                            android:text="-"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView5"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:focusable="false"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicle"
+                        android:layout_marginTop="35dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/fontpoppinssemibold"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="0,1">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontpoppinsregular"
+                                android:text="Vehicle:" />
+
+                            <TextView
+                                android:id="@+id/txtVehicleModel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontpoppinsmedium"
+                                android:text="No info found" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontpoppinsregular"
+                                android:text="VIN:" />
+
+                            <TextView
+                                android:id="@+id/txtVin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontpoppinsmedium"
+                                android:text="No info found" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontpoppinsregular"
+                                android:text="Number Plate:" />
+
+                            <TextView
+                                android:id="@+id/txtNumPlate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fontpoppinsmedium"
+                                android:text="No info found" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/txtNotasksTpDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Parts"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/fontpoppinssemibold"/>
+
+                    <TextView
+                        android:id="@+id/txtParts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/servicetype_cards"
+                        android:fontFamily="@font/fontpoppinsmedium"
+                        android:paddingHorizontal="10dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="5dp"
+                        android:text="Brake Pads:               R 2000.00"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Additional Costs"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/fontpoppinssemibold"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="15dp">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:fontFamily="@font/fontpoppinsregular"
+                            android:text="Labour:"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txtRand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontpoppinsmedium"
+                            android:paddingHorizontal="5dp"
+                            android:text="R"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/txtLabourCost"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/txtLabourCost"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:background="@drawable/txtgradientgtor"
+                            android:fontFamily="@font/fontpoppinsmedium"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="3dp"
+                            android:text="1000, 00"
+                            android:inputType="number"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView11"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/txtPaymentStatusHeading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontpoppinssemibold"
+                            android:text="Payment Status:"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imgPayStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/vectornotpaid"
+                            app:layout_constraintStart_toEndOf="@+id/txtPaymentStatusHeading"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imgChangePayStatus"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/vectorchange"
+                            app:layout_constraintStart_toEndOf="@+id/imgPayStatus"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="250dp">
+
+                        <Button
+                            android:id="@+id/btnSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/green"
+                            android:fontFamily="@font/fontpoppinsmedium"
+                            android:paddingHorizontal="45dp"
+                            android:paddingVertical="5dp"
+                            android:text="Save"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/btnDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/red"
+                            android:fontFamily="@font/fontpoppinsmedium"
+                            android:text="Delete Service"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="5dp">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

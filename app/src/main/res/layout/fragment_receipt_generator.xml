@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiptGeneratorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <!-- Background Image with See-Through Black Layer -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carexhaustheader"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true" />
+
+            <!-- TextView on top of the background image -->
+            <TextView
+                android:id="@+id/txtTitleVehicleNumberPLate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:text="Invoice Generator"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/aclonica"
+                android:textSize="37sp"
+                android:elevation="4dp" />
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtSelectBuisness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/fontpoppinsmedium"
+                        android:text="Select Company"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinCompanyName"
+                        android:paddingHorizontal="5dp"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="12dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/spingradientgtor"
+                        android:fontFamily="@font/fontpoppinsregular" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtSelectCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/fontpoppinsmedium"
+                        android:text="Select Customer"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <Spinner
+                        android:id="@+id/spinCustomer"
+                        android:layout_width="310dp"
+                        android:layout_height="45dp"
+                        android:padding="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/spingradientgtor"
+                        android:fontFamily="@font/fontpoppinsregular"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtParts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Parts"
+                        android:fontFamily="@font/fontpoppinsmedium"
+                        android:textSize="25sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/btnPlus"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/vectorplusbutton"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txtAddANewPart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontpoppinsmedium"
+                        android:gravity="center"
+                        android:text="Add a new part"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/spinPartName"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/spingradientgtor"
+                        android:hint="Part Name"
+                        android:padding="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/edtPartCost"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/spingradientgtor"
+                        android:hint="Part Price"
+                        android:inputType="numberDecimal"
+                        android:padding="12dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPartsQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:text="Select quantity"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <NumberPicker
+                        android:id="@+id/npStockCounter"
+                        android:layout_width="63dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btnAddPart"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/red"
+                        android:fontFamily="@font/fontpoppinsmedium"
+                        android:padding="12dp"
+                        android:text="Add Part" />
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtPartsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center"
+                    android:text="Parts List"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAddPart"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtLabourCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Labour Cost"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/fontpoppinsmedium"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/edttxtLabour"
+                    android:layout_width="310dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/spingradientgtor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:inputType="numberDecimal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnFinalReview"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:text="Review"
+                    android:fontFamily="@font/fontpoppinsmedium"
+                    android:backgroundTint="#038A39" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtFinalQuote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Final Quote"
+                    android:fontFamily="@font/fontpoppinsmedium" />
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layoutQuote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtRvalue"
+                        android:layout_width="192dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/greenboderbackground"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtFinalPrice"
+                        android:layout_width="27dp"
+                        android:layout_height="42dp"
+                        android:text="R"
+                        android:textSize="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtRvalue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btnReview"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_gravity="center"
+                        android:text="Review"
+                        android:visibility="invisible"
+                        android:fontFamily="@font/fontpoppinsmedium"
+                        android:backgroundTint="#038A39" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                </Space>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+

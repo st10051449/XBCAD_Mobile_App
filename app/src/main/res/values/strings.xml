@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">XBCAD-AntonieMotors</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="select_customer">Select Customer</string>
+
+    <string-array name="customer_type_options">
+        <item>Private</item>
+        <item>Business</item>
+    </string-array>
+
+    <!-- Description for the vehicle image -->
+    <string name="image_desc">Selected vehicle image</string>
+
+    <!-- Description for the remove button -->
+    <string name="remove_image_desc">Remove image</string>
+
+
+    <string-array name="leave_types">
+        <item>Annual Leave</item>
+        <item>Sick Leave</item>
+        <item>Family Responsibility Leave</item>
+        <item>Bereavement Leave</item>
+        <item>Maternity Leave</item>
+        <item>Parental Leave</item>
+        <item>Religious Leave</item>
+        <item>Study Leave</item>
+        <item>Unpaid Leave</item>
+
+    </string-array>
+
+</resources>

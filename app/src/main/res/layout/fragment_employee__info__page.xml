@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employee_Info_Page">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <!-- Background Image with See-Through Black Layer -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/toolboxv4"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true" />
+
+
+            <TextView
+                android:id="@+id/txtheaderempname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:paddingTop="60dp"
+                android:text="EmpName"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp" />
+
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp" />
+
+
+
+        </FrameLayout>
+
+
+        <ScrollView
+            android:id="@+id/svEmployeedetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+            app:layout_constraintBottom_toTopOf="@id/btnEditEmployeeInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linLayoutBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+
+                <TextView
+                    android:id="@+id/textViewContactInfoHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingRight="50dp"
+                    android:text="Details:"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewCellNumberLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Phone Number:"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="normal"
+                        android:paddingBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txtempcell_view"
+                        android:layout_width="310dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/txtgradientgtor"
+                        android:text="074 352 1145"
+                        android:textSize="18sp"
+                        android:layout_marginStart="20dp"
+                        android:paddingStart="14dp"
+                        android:paddingTop="4dp"/>
+
+                    <EditText
+                        android:id="@+id/txtupdatecell"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/txtgradientgtor"
+                        android:hint="Enter new phone number"
+                        android:visibility="gone"
+                        android:layout_marginStart="20dp"
+                        android:paddingStart="14dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewEmailLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Email:"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="normal"
+                        android:paddingBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txtempEmail_view"
+                        android:layout_width="310dp"
+                        android:layout_height="35dp"
+                        android:text="cviljoen3@gmail.com"
+                        android:textSize="18sp"
+                        android:background="@drawable/txtgradientgtor"
+                        android:layout_marginStart="20dp"
+                        android:paddingStart="14dp"
+                        android:paddingTop="4dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtupdateEmail"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:hint="Enter new Email"
+                        android:visibility="gone"
+                        android:background="@drawable/txtgradientgtor"
+                        android:layout_marginStart="20dp"
+                        android:paddingStart="14dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewAddressLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Physical Address:"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="normal"
+                        android:paddingBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txtempAddress_view"
+                        android:layout_width="250dp"
+                        android:layout_height="100dp"
+                        android:text="33 Civil Avenue\nBedfordview\nGermiston\n2008"
+                        android:textSize="18sp"
+                        android:background="@drawable/txtgradientgtor"
+                        android:layout_marginStart="20dp"
+                        android:paddingStart="14dp"
+                        android:paddingTop="4dp"/>
+
+
+                    <EditText
+                        android:id="@+id/txtupdateAddress"
+                        android:layout_width="250dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:hint="Enter new Address"
+                        android:visibility="gone"
+                        android:background="@drawable/txtgradientgtor"
+                        android:layout_marginStart="20dp"
+                        android:paddingStart="14dp"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/txtupdateMonthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundcorneredt"
+                        android:hint="Enter new Salary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <!-- Save Button (Initially Hidden) -->
+                <Button
+                    android:id="@+id/btnSaveEmployeeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#CA2F2E"
+                    android:text="Save"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnEditEmployeeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="#038A39"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Edit Employee Info"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"/>
+                <Button
+                    android:id="@+id/btnDeleteEmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#CA2F2E"
+                    android:text="Delete"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                </Space>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

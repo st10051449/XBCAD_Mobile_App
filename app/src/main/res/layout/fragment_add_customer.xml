@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- Header Section with a FrameLayout for overlapping the background and back button -->
+        <FrameLayout
+            android:id="@+id/frameLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="181dp">
+
+            <!-- Background Image -->
+
+            <!-- Back Button on top of the background image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/addcustomerfragmentheader" />
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="466dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="Customer Information:"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Customer Type:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/spnCustomerType"
+                            android:background="@drawable/spingradientgtor"
+                            android:entries="@array/customer_type_options">
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <!-- Name Layout -->
+                    <LinearLayout
+                        android:id="@+id/nameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Name:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtRegName"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+                    </LinearLayout>
+
+                    <!-- Surname Layout -->
+                    <LinearLayout
+                        android:id="@+id/surnameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Surname:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtRegSurname"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+                    </LinearLayout>
+
+                    <!-- Company Name Layout -->
+                    <LinearLayout
+                        android:id="@+id/companyLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:visibility="gone"> <!-- Initially hidden -->
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Company Name:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtCompanyName"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Mobile Number:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtRegMobNumber"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Email:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtEmail"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Physical Address:"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edttxtAddress"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btnSubmitRegCustomer"
+                                android:layout_width="140dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#038A39"
+                                android:text="Submit"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.498"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home"
+    android:background="@drawable/carsideprofile"
+    tools:context=".DocumentationFragment">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgseethroughblack"
+        android:orientation="vertical">
+
+        <!-- Non-scrollable Header Section -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Documentation"
+            android:textAlignment="center"
+            android:textColor="#D3CDCD"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+
+
+        <ScrollView
+            android:id="@+id/svVehicleMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="40dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp">
+
+
+                    <!-- Leave Manager -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Business\nAddress"
+                            android:textColor="#FFFFFF"
+                            android:textSize="38sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="#787771"
+                            app:cardCornerRadius="75dp"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+
+
+                            <ImageView
+                                android:id="@+id/btnAddBuisness"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="4dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/vectorreceipt" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Add Business Credentials"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Quotes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <!-- Row 1: Vehicle Management-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp">
+
+
+                    <!-- Leave Manager -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="#787771"
+                            app:cardCornerRadius="75dp"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+
+
+                            <ImageView
+                                android:id="@+id/btnQuotes"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="4dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/vectorreceipt" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Generate Quote"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                    <!-- Leave Manager -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="#787771"
+                            app:cardCornerRadius="75dp"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnpastQuotes"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="4dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/documents" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Past Quotes"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invoices"
+                    android:textColor="#FFFFFF"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp">
+
+
+                    <!-- Leave Manager -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="#787771"
+                            app:cardCornerRadius="75dp"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnInvoiceGen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="4dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/bill" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Generate Invoice"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+
+                    <!-- Leave Manager -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="#787771"
+                            app:cardCornerRadius="75dp"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/btnViewInvoices"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="4dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/documents"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Past Invoices"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Non-scrollable Footer Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="40dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

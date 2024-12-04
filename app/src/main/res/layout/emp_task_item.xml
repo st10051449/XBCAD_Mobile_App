@@ -1,0 +1,33 @@
+<!-- task_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/white_border"
+   >
+
+    <!-- Task Checkbox -->
+
+    <!-- Number Plate Text -->
+    <TextView
+        android:id="@+id/numberPlateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="#808080"/>
+
+    <!-- Task Description Text -->
+    <TextView
+        android:id="@+id/taskDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

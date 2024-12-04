@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carsideprofile"
+    tools:context=".AdminLeaveMenuFragment">
+
+    <!-- Black overlay background -->
+    <View
+        android:id="@+id/blackOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgblackdark" />
+
+    <!-- Main vertical layout containing header and scroll view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header layout -->
+        <LinearLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:layout_gravity="top|center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:src="@drawable/vectorback" />
+
+            <TextView
+                android:id="@+id/txtAdminEmpOverView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontheader"
+                android:gravity="center_horizontal"
+                android:text="Leave Manager"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45dp" />
+        </LinearLayout>
+
+        <!-- ScrollView for content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <!-- Leave Tracker Section -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#787771"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/imgleaves"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/leavetrack" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Leave Tracker"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Leave Approval Section -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#787771"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/imgleaveap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/leaveapp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Leave Approval"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Leave History Section -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#787771"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/imgleavehis"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/historyleave" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Leave History"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+</FrameLayout>

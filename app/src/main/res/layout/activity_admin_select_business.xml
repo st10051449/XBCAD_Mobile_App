@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logincar"
+    tools:context=".AdminSelectBusinessActivity">
+
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="639dp"
+        android:background="@drawable/bgseethroughgrey"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619">
+
+
+        <TextView
+            android:id="@+id/login_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/agdasima_bold"
+            android:paddingBottom="60dp"
+            android:text="Register"
+            android:textColor="@android:color/black"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/username_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/albert_sans"
+            android:paddingBottom="8dp"
+            android:text="Select Your Company:"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!--<Spinner
+                    android:id="@+id/spAllBusinessNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/txtgradientgtor"/>-->
+
+                <EditText
+                    android:id="@+id/edtBusinessNames"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp"
+                    android:padding="12dp"
+                    android:background="@drawable/spingradientgtor"
+                    android:textColor="@color/black"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+
+                <Button
+                    android:id="@+id/btnAdminBusChoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proceed"
+                    android:backgroundTint="@color/black"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

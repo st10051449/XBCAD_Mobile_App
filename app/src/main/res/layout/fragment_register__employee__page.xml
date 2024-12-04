@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context=".Register_Employee_Page">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/toolboxv4"
+        android:clipToOutline="true"
+        android:foregroundTint="#80000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/vectorback"
+            android:layout_gravity="start"/>
+
+        <!-- Centered TextView with line breaks -->
+        <TextView
+            android:id="@+id/txtEmployeeregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:text="Register Employee"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="45sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnregEmp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtEmpName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="Name"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/txtEmpname"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="text"
+                android:paddingLeft="0dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpName"
+                app:layout_constraintWidth_percent="0.8"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <!-- Surname Field -->
+            <TextView
+                android:id="@+id/txtEmpSurname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="Surname"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpname" />
+
+            <EditText
+                android:id="@+id/txtEmpsurname"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="text"
+                android:paddingLeft="0dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpSurname"
+                app:layout_constraintWidth_percent="0.8"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            <TextView
+                android:id="@+id/txtMonthlySalary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="Monthly Salary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpsurname" />
+
+            <EditText
+                android:id="@+id/txtEmpsalary"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="text"
+                android:paddingLeft="0dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMonthlySalary"
+                app:layout_constraintWidth_percent="0.8"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <!-- Side by Side TextViews -->
+            <TextView
+                android:id="@+id/txtTotalLeave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Total Leave Days"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/txtLeaveleft"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpsalary"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <TextView
+                android:id="@+id/txtLeaveleft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Total Leave Left"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtTotalLeave"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmpsalary"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <!-- EditTexts below each TextView -->
+            <EditText
+                android:id="@+id/txtTotal"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/txtleft"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTotalLeave"
+                app:layout_constraintWidth_percent="0.4"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/txtleft"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtTotal"
+                app:layout_constraintTop_toBottomOf="@+id/txtLeaveleft"
+                app:layout_constraintWidth_percent="0.4"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtMobileNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="Mobile Number"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+
+            <EditText
+                android:id="@+id/txtnumber"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMobileNumber"
+                app:layout_constraintWidth_percent="0.8"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <!-- Email Field -->
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="Email"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtnumber" />
+
+            <EditText
+                android:id="@+id/txtEmailInput"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+                app:layout_constraintWidth_percent="0.8"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            <!-- Password Field -->
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="Password"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmailInput" />
+
+            <EditText
+                android:id="@+id/txtPasswordInput"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+                app:layout_constraintWidth_percent="0.8"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txtPhysicalAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="Physical Address"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPasswordInput" />
+
+            <EditText
+                android:id="@+id/txtAddressInput"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spingradientgtor"
+                android:inputType="text"
+                android:minHeight="80dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPhysicalAddress"
+                app:layout_constraintWidth_percent="0.9"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnregEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#038A39"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

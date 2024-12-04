@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--tools:context=".BuisnessAddressFragment"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carexhaustheader"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true"/>
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start|top"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/aclonica"
+                android:layout_marginTop="60dp"
+                android:text="Address\nDetails"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="38sp" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+
+                        <TextView
+                            android:id="@+id/txtPartN"
+                            android:layout_width="311dp"
+                            android:layout_height="wrap_content"
+                            android:text="Business Name:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtBusinessName"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:textColor="@color/black"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Street Number and Name:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtStreet"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="Suburb:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtSuburb"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:text="City:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtCity"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:textStyle="bold"
+                            android:text="Post Code:"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"/>
+
+                        <EditText
+                            android:id="@+id/edtPost"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="310dp"
+                            android:inputType="numberDecimal"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/spingradientgtor" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"/>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="100dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnAddAddress"
+                                android:layout_width="140dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#038A39"
+                                android:text="Save"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.498"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

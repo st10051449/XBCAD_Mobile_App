@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home"
+        android:background="@drawable/carsideprofile"
+        tools:context=".CustomerMenuFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgseethroughblack"
+            android:orientation="vertical">
+
+            <!-- Non-scrollable Header Section -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer\nMenu"
+                android:textAlignment="center"
+                android:textColor="#D3CDCD"
+                android:textSize="65sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"/>
+
+
+
+            <ScrollView
+                android:id="@+id/svVehicleMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="40dp">
+
+
+                    <!-- Row 1: Vehicle Management-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+
+                        <!-- Leave Manager -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="8dp"
+                                app:cardBackgroundColor="#787771"
+                                app:cardCornerRadius="75dp"
+                                app:cardElevation="4dp"
+                                app:cardPreventCornerOverlap="true"
+                                app:cardUseCompatPadding="true">
+
+                                <ImageView
+                                    android:id="@+id/btnCustomers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="4dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/customersearch" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="View Registered\nCustomers"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Row 1: Vehicle Management-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+
+                        <!-- Leave Manager -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="8dp"
+                                app:cardBackgroundColor="#787771"
+                                app:cardCornerRadius="75dp"
+                                app:cardElevation="4dp"
+                                app:cardPreventCornerOverlap="true"
+                                app:cardUseCompatPadding="true">
+
+                                <ImageView
+                                    android:id="@+id/btnCustomerAnalytics"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="4dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/vehicleanalytics" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Customer Analytics"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <!-- Row 1: Vehicle Management-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+
+                        <!-- Leave Manager -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="8dp"
+                                app:cardBackgroundColor="#787771"
+                                app:cardCornerRadius="75dp"
+                                app:cardElevation="4dp"
+                                app:cardPreventCornerOverlap="true"
+                                app:cardUseCompatPadding="true">
+
+                                <ImageView
+                                    android:id="@+id/btnAddCustomer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="4dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/addcustomer"/>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Register a Customer"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- Non-scrollable Footer Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>

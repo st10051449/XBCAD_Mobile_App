@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PastReceiptsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/carwheelheader"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/aclonica"
+                android:layout_marginTop="50dp"
+                android:text="Past Invoices"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/fontpoppinsregular"
+                android:text="Search"
+                android:textColor="#000000"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/txtgradientgtor"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/vectorsearch"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/txtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:id="@+id/linlayServiceCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewService"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="10dp"
+                        android:textAlignment="center"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- ConstraintLayout for Header -->
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/red">
+
+                                <TextView
+                                    android:id="@+id/txtCustName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="100dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="100dp"
+                                    android:fontFamily="@font/fontpoppinssemibold"
+                                    android:text="Example Customer Name"
+                                    android:textColor="#FFFFFF"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <!-- TableLayout for Details -->
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:stretchColumns="0,1"
+                                android:layout_marginVertical="5dp"
+                                android:layout_marginHorizontal="20dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/textView9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/fontpoppinsregular"
+                                        android:text="Service Type:" />
+
+                                    <TextView
+                                        android:id="@+id/txtServiceType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/fontpoppinsmedium"
+                                        android:text="Service Name" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/textView10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/fontpoppinsregular"
+                                        android:text="Total Price:" />
+
+                                    <TextView
+                                        android:id="@+id/txtPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/fontpoppinsmedium"
+                                        android:text="R0000,00" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+                            </TableLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

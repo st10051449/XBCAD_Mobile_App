@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208400258513",
+    "firebase_url": "https://antonie-motors-default-rtdb.firebaseio.com",
+    "project_id": "antonie-motors",
+    "storage_bucket": "antonie-motors.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208400258513:android:87ee4bec4a1377bccf7cf0",
+        "android_client_info": {
+          "package_name": "com.opsc7311poe.xbcad_antoniemotors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208400258513-me25cb35ju7s36vkqlfkvctp75sdggul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.opsc7311poe.xbcad_antoniemotors",
+            "certificate_hash": "ced3711af1ed03f1303b263c93f80ecd5a8b4011"
+          }
+        },
+        {
+          "client_id": "208400258513-4unkec1stun94b1js1l1vaubr58qcdsf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw79zhAhcZ7-HW4FTN9gazLt2oKeL0AS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208400258513-4unkec1stun94b1js1l1vaubr58qcdsf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

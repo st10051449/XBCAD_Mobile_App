@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#80000000"
+    android:paddingBottom="5dp"
+    tools:context=".EmployeeFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:background="@drawable/toolboxv4"
+        android:clipToOutline="true"
+        android:foregroundTint="#80000000"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/vectorback"
+            android:layout_gravity="start"/>
+
+        <!-- Centered TextView with line breaks -->
+        <TextView
+            android:id="@+id/txtEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_horizontal"
+            android:paddingTop="80dp"
+            android:text="Employee"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader">
+
+        <TextView
+            android:id="@+id/txtSearchemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingLeft="30dp"
+            android:text="Search"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtEmpSearched"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spingradientgtor"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/searchimage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSearchemp"
+            app:layout_constraintWidth_percent="0.8"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/searchimage"
+            android:layout_width="44dp"
+            android:layout_height="38dp"
+            android:src="@drawable/search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtEmpSearched"
+            app:layout_constraintTop_toBottomOf="@+id/txtSearchemp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEmpSearched" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/svEmployeeList"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentLayout"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/linlayEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

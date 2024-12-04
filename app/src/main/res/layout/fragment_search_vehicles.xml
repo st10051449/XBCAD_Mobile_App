@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vehicles"
+    tools:context=".SearchVehiclesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <!-- Background Image with See-Through Black Layer -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vehicledetails"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true" />
+
+            <!-- TextView on top of the background image -->
+            <TextView
+                android:id="@+id/txtTitleVehicleNumberPLate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:text="Vehicles"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/aclonica"
+                android:textSize="47sp"
+                android:elevation="4dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp" />
+
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linLayoutBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Search View -->
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SearchView
+                    android:id="@+id/vehicleSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </SearchView>
+
+            </LinearLayout>
+
+                <!-- RecyclerView without ScrollView -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scrollbars="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+
+            <!-- Plus Button for Adding New Customers -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btnPlus"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/vectorplusbutton"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

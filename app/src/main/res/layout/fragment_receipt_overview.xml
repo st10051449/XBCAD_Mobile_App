@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiptOverviewFragment">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/carexhaustheader"
+        android:clipToOutline="true"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/vectorback"
+            android:layout_gravity="start"/>
+
+        <TextView
+            android:id="@+id/txtEmployeeReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_horizontal"
+            android:text="Invoice Overview"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:paddingTop="40dp"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp">
+
+        <!-- Scrollable content layout -->
+        <ScrollView
+            android:id="@+id/svQuoteOverview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top">
+
+            <!-- This LinearLayout will hold the dynamic content, such as the invoice layout -->
+            <LinearLayout
+                android:id="@+id/linearLayoutContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Dynamic content will be added here -->
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnMakePDF"
+                android:layout_width="127dp"
+                android:layout_height="53dp"
+                android:fontFamily="@font/fontpoppinsregular"
+                android:text="Make PDF"
+                android:backgroundTint="#038A39"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnQuoteOv"
+                android:layout_width="125dp"
+                android:layout_height="53dp"
+                android:fontFamily="@font/fontpoppinsregular"
+                android:text="Delete"
+                android:backgroundTint="#038A39"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

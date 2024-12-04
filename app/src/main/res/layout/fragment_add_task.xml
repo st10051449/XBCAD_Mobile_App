@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <ImageView
+                android:id="@+id/imgHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carenginetodo"
+                android:background="@drawable/rounded_image"/>
+
+            <View
+                android:id="@+id/viewTint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000" />
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:src="@drawable/vectorback" />
+
+            <TextView
+                android:id="@+id/txtEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:paddingTop="60dp"
+                android:text="Add Task"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/albert_sans"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="8dp"
+                        android:text="Task Name:"
+                        android:textAlignment="textStart"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/txtTaskName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="10dp"
+                        android:background="@drawable/txtgradientgtor"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/albert_sans"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="4dp"
+                        android:text="Task Description:"
+                        android:textAlignment="viewStart"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/txtTaskDescriptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:paddingHorizontal="10dp"
+                        android:background="@drawable/txtgradientgtor"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/charCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="8dp"
+                        android:text="400 words"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/albert_sans"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="4dp"
+                        android:text="Select A Vehicle:"
+                        android:textAlignment="textStart"
+                        android:textSize="25sp" />
+
+                    <Spinner
+                        android:id="@+id/spChooseVehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/txtgradientgtor" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:id="@+id/btnAddTask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/cherryred"
+                        android:paddingHorizontal="24dp"
+                        android:textSize="20sp"
+                        android:paddingVertical="8dp"
+                        android:text="Add Task" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                    </Space>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

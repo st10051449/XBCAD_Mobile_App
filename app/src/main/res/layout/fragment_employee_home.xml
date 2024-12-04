@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home"
+    android:background="@drawable/carsideprofile"
+    tools:context=".EmployeeHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgseethroughblack"
+        android:orientation="vertical">
+
+        <!-- Non-scrollable Header Section -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textAlignment="center"
+            android:textColor="#D3CDCD"
+            android:textSize="65sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="-40dp"
+        android:layout_marginTop="-40dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="caranimation.json"
+        app:lottie_loop="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dp"
+                android:text="Welcome"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivSettings"
+                android:layout_width="61dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingLeft="75dp"
+                android:src="@drawable/vectorsettings" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"
+                android:text="Due Soon:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"/>
+
+
+            <!--<ImageView
+                android:id="@+id/ivFilter"
+                android:layout_width="45dp"
+                android:layout_height="44dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/vector_filter" />-->
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/svHomeReminders"
+            android:layout_width="match_parent"
+            android:layout_height="409dp"
+            android:layout_weight="0"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="60dp">
+
+                <LinearLayout
+                    android:id="@+id/taskContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNotasksToDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="18dp"
+                        android:text="No tasks due this week."
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <!-- Non-scrollable Footer Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="12dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

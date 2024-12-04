@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".VehicleAnalyticsFragment">
+
+<!-- Header Layout -->
+<LinearLayout
+    android:id="@+id/layoutHeader"
+    android:layout_width="0dp"
+    android:layout_height="190dp"
+    android:background="@drawable/vehicledetails"
+    android:clipToOutline="true"
+    android:foregroundTint="#80000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <ImageView
+        android:id="@+id/ivBackButton"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:src="@drawable/vectorback" />
+
+    <TextView
+        android:id="@+id/txtVAnalytics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center_horizontal"
+        android:text="Vehicle Analytics"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp" />
+</LinearLayout>
+
+<ScrollView
+    android:id="@+id/svAssignTask"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/layoutHeader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linlayAnalytics">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:text="Total vehicles registered"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txtTotalVehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:text="Vehicles registered over time"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/vhlLineChart"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:text="Top 5 Registered vehicle models"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/vhlModelBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:text="Vehicle Demographics"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/vhlBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

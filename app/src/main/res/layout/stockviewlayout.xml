@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/customer_cards"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp">
+
+    <!-- Header with Red Background -->
+    <TextView
+        android:id="@+id/tvPartName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customernamecorners"
+        android:text="Part Name"
+        android:fontFamily="@font/fontpoppinssemibold"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Mobile Number -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPartDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Wide bumper frame fits all"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPartCost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:text="2000"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/txtCurrentStock"
+            android:paddingLeft="8dp"
+            android:fontFamily="@font/fontpoppinssemibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Stock:" />
+
+        <TextView
+            android:id="@+id/txtStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="TextView" />
+
+    </LinearLayout>
+</LinearLayout>

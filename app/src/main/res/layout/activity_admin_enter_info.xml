@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logincar"
+    tools:context=".AdminEnterInfo">
+
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="639dp"
+        android:background="@drawable/bgseethroughgrey"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619">
+
+
+        <TextView
+            android:id="@+id/regheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/agdasima_bold"
+            android:paddingBottom="60dp"
+            android:text="Register"
+            android:textColor="@android:color/black"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingBottom="8dp"
+                    android:text="Profile Picture:"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/ivAdminProfilePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/txtSelectImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="15dp"
+                    android:text="Select Image To Upload"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/businessname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingBottom="8dp"
+                    android:text="Business Name:"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/txtAdminBusinessName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Please enter your business name"/>
+
+                <TextView
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingBottom="8dp"
+                    android:text="First Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/txtAdminFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Please enter your first name"/>
+
+                <TextView
+                    android:id="@+id/lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingBottom="8dp"
+                    android:text="Last Name:"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/txtAdminLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Please enter your last name"/>
+                <TextView
+                    android:id="@+id/username_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingBottom="8dp"
+                    android:text="Email:"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/txtAdminEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Please enter your email address"/>
+
+                <TextView
+                    android:id="@+id/password_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="Password:"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Please create your password"/>
+
+                <TextView
+                    android:id="@+id/phonelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="Phone Number:"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/txtAdminPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="phone"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Please enter your number"/>
+
+                <TextView
+                    android:id="@+id/addresslabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/albert_sans"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="8dp"
+                    android:text="Physical Address:"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/txtAdminPAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txtgradientgtor"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Please enter your address"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:indeterminate="true" />
+
+                <Button
+                    android:id="@+id/btnRegisterAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/black"
+                    android:padding="12dp"
+                    android:text="Register"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

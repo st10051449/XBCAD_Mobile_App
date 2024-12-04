@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLeavehistory">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="0dp"
+        android:layout_height="206dp"
+        android:background="@drawable/toolboxv4"
+        android:clipToOutline="true"
+        android:foregroundTint="#80000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:src="@drawable/vectorback" />
+
+        <TextView
+            android:id="@+id/txtleavelistheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_horizontal"
+            android:text="Employee Leave History"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:paddingTop="30dp"/>
+    </LinearLayout>
+
+    <!-- Content Layout: Buttons Below Header -->
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- First Button (Start Date) -->
+        <Button
+            android:id="@+id/btnApproved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Approved History"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"/>
+
+
+        <Button
+            android:id="@+id/btnDenied"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Denied History"
+            android:textColor="@color/black"
+            android:textColorLink="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"/>
+    </LinearLayout>
+
+    <!-- ScrollView with Leave History Container -->
+    <ScrollView
+        android:id="@+id/scrllemphis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutButtons"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <!-- Container for Leave Requests Inside ScrollView -->
+        <LinearLayout
+            android:id="@+id/leaveHistoryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

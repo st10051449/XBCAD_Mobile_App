@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="red">#CA2F2E</color>
+    <color name="green">#038A39</color>
+    <color name="cherryred">#5a0000</color>
+
+
+
+        <color name="plateColor1">#CA2F2E</color>
+        <color name="plateColor2">#038A39</color>
+        <color name="plateColor3">#2A6DA7</color>
+        <color name="plateColor4">#5B3F8C</color>
+        <color name="plateColor5">#D36C8A</color>
+        <color name="plateColor6">#D3A92A</color>
+        <color name="plateColor7">#D06F2E</color>
+        <color name="plateColor8">#007A74</color>
+
+
+
+</resources>

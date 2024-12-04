@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminApproveRegistrationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/toolboxv4"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:id="@+id/txtEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="40dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:text="Approve Registration"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp" />
+
+            <ImageView
+                android:id="@+id/ivBackButton"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:src="@drawable/vectorback"
+                android:layout_gravity="start"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labeltext"
+                android:layout_width="413dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/albert_sans"
+                android:gravity="center"
+                android:text="Pending Requests:"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+
+        <ScrollView
+            android:id="@+id/svPendingEmps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/linlayEmployees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

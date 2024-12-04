@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context=".EmpLeaveFragment">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:background="@drawable/toolboxv4"
+        android:clipToOutline="true"
+        android:foregroundTint="#80000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:src="@drawable/vectorback" />
+
+        <TextView
+            android:id="@+id/txtleavelistheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_horizontal"
+            android:text="Leave"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="0dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader">
+
+        <LinearLayout
+            android:id="@+id/LinlayLeaveSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Centered Button: Save Leave -->
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Please Select your Leave Type:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/layoutSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerLeaveType"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/txtgradientgtor"
+                    android:entries="@array/leave_types"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <!-- Leave Remaining Section -->
+                <TextView
+                    android:id="@+id/txtLeaveRules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingTop="10dp"
+                    android:text="These are the rules"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtLeaveRemainingLabel"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Leave Remaining"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtLeaveRemaining"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="X"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtDaysLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="days"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutdatepick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Centered Start Date -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtSelectStartLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="Select Start:"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtselleavestart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="42dp"
+                        android:layout_weight="1"
+                        android:hint="Select Date"
+                        android:textColor="@color/black"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <!-- Spacer -->
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp" />
+
+                <!-- Centered End Date -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtSelectEndLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="Select End:"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtselleaveend"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:hint="Select Date"
+                        android:inputType="date"
+                        android:textColor="@color/black"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <!-- Spacer -->
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#CA2F2E"
+                android:text="Request"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

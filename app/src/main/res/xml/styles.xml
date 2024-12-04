@@ -1,0 +1,7 @@
+<resources>
+    <!-- Customize your badge style if needed -->
+    <style name="Widget.MaterialComponents.Badge">
+        <item name="backgroundColor">@color/red</item>
+        <item name="badgeTextColor">@android:color/white</item>
+    </style>
+</resources>

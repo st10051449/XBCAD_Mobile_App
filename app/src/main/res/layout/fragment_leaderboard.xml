@@ -1,0 +1,206 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#121212"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/leaderboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:paddingBottom="16dp"
+            android:text="LEADERBOARD"
+            android:textColor="@color/red"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="cardriving.json"
+            app:lottie_loop="true" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Player 1 with Gold Medal and Profile Picture -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/player_row_border"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <!-- Gold Medal Icon -->
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="Gold Medal"
+                            android:src="@drawable/vector_goldmedaal" />
+
+                        <!-- Profile Picture -->
+                        <ImageView
+                            android:id="@+id/player1pp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/circular_border"
+                            android:contentDescription="Player Profile Picture"
+                            android:src="@drawable/vector_myprofile" />
+
+
+                        <TextView
+                            android:id="@+id/player1_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingStart="8dp"
+                            android:text="Player Name"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <!-- Player Score -->
+                        <TextView
+                            android:id="@+id/player1_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="2980"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/player_row_border"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <!-- Gold Medal Icon -->
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/vector_silvermedal" />
+
+                        <!-- Profile Picture -->
+                        <ImageView
+                            android:id="@+id/player2_pp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/circular_border"
+                            android:contentDescription="Player Profile Picture"
+                            android:src="@drawable/vector_myprofile" />
+
+                        <TextView
+                            android:id="@+id/player2_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingStart="8dp"
+                            android:text="Player Name"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <!-- Player Score -->
+                        <TextView
+                            android:id="@+id/player2_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="2980"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/player_row_border"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="Gold Medal"
+                            android:src="@drawable/vector_bronzemedal" />
+
+
+                        <ImageView
+                            android:id="@+id/player3_pp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/circular_border"
+                            android:contentDescription="Player Profile Picture"
+                            android:src="@drawable/vector_myprofile" />
+
+                        <TextView
+                            android:id="@+id/player3_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:paddingStart="8dp"
+                            android:text="Player Name"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <!-- Player Score -->
+                        <TextView
+                            android:id="@+id/player3_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="2980"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/leaderboardContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <!-- Player 1 with Gold Medal and Profile Picture -->
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>
